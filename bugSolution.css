@@ -1,0 +1,18 @@
+/* Incorrect CSS (bug.css):*/
+.container {
+display: flex;
+}
+.item {
+width: calc(100% - 10px);
+background-color: lightblue;
+}
+
+/* Correct CSS (bugSolution.css):*/
+.container {
+display: flex;
+width: 300px; /* Explicit width for the container */
+}
+.item {
+width: calc(100% - 10px);
+background-color: lightblue;
+}
